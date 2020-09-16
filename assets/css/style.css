@@ -509,6 +509,9 @@ h6 {
       background: rgb(254, 210, 255);
       background: linear-gradient(0deg, rgba(254, 210, 255, 1) 37%, rgba(255, 242, 252, 1) 79%);
    }
+   .menu__link:hover{
+       background: none;
+   }
 
    .menu__body._active {
       opacity: 1;
@@ -705,4 +708,16 @@ h6 {
    ._container {
       padding: 0px 8px 0px 8px;
    }
+   .actions-header__item_login:hover{
+       background: none;
+   }
+   .actions-header__item_reg:hover{
+    background: none;
+    }
+    .actions-header__item_mail:hover{
+        background: none;
+    }
+    .info-header__callback:hover{
+        background: none;
+    } 
 }
