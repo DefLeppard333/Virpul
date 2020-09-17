@@ -2,84 +2,94 @@
 
 @font-face {
    font-family: "Conv_Play-Bold";
-   src: url("fonts/Play-Bold.eot");
-   src: local("☺"), url("fonts/Play-Bold.woff") format("woff"), url("fonts/Play-Bold.ttf") format("truetype"),
-      url("fonts/Play-Bold.svg") format("svg");
+   src: url("../fonts/Play-Bold.eot");
+   src: local("☺"), url("../fonts/Play-Bold.woff") format("woff"), url("../fonts/Play-Bold.ttf") format("truetype"),
+      url("../fonts/Play-Bold.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Play-Regular";
-   src: url("fonts/Play-Regular.eot");
-   src: local("☺"), url("fonts/Play-Regular.woff") format("woff"), url("fonts/Play-Regular.ttf") format("truetype"),
-      url("fonts/Play-Regular.svg") format("svg");
+   src: url("../fonts/Play-Regular.eot");
+   src: local("☺"), url("../fonts/Play-Regular.woff") format("woff"),
+      url("../fonts/Play-Regular.ttf") format("truetype"), url("../fonts/Play-Regular.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Black";
-   src: url("fonts/Roboto-Black.eot");
-   src: local("☺"), url("fonts/Roboto-Black.woff") format("woff"), url("fonts/Roboto-Black.ttf") format("truetype"),
-      url("fonts/Roboto-Black.svg") format("svg");
+   src: url("../fonts/Roboto-Black.eot");
+   src: local("☺"), url("../fonts/Roboto-Black.woff") format("woff"),
+      url("../fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Bold";
-   src: url("fonts/Roboto-Bold.eot");
-   src: local("☺"), url("fonts/Roboto-Bold.woff") format("woff"), url("fonts/Roboto-Bold.ttf") format("truetype"),
-      url("fonts/Roboto-Bold.svg") format("svg");
+   src: url("../fonts/Roboto-Bold.eot");
+   src: local("☺"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"),
+      url("../fonts/Roboto-Bold.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Light";
-   src: url("fonts/Roboto-Light.eot");
-   src: local("☺"), url("fonts/Roboto-Light.woff") format("woff"), url("fonts/Roboto-Light.ttf") format("truetype"),
-      url("fonts/Roboto-Light.svg") format("svg");
+   src: url("../fonts/Roboto-Light.eot");
+   src: local("☺"), url("../fonts/Roboto-Light.woff") format("woff"),
+      url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Medium";
-   src: url("fonts/Roboto-Medium.eot");
-   src: local("☺"), url("fonts/Roboto-Medium.woff") format("woff"), url("fonts/Roboto-Medium.ttf") format("truetype"),
-      url("fonts/Roboto-Medium.svg") format("svg");
+   src: url("../fonts/Roboto-Medium.eot");
+   src: local("☺"), url("../fonts/Roboto-Medium.woff") format("woff"),
+      url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Regular";
-   src: url("fonts/Roboto-Regular.eot");
-   src: local("☺"), url("fonts/Roboto-Regular.woff") format("woff"), url("fonts/Roboto-Regular.ttf") format("truetype"),
-      url("fonts/Roboto-Regular.svg") format("svg");
+   src: url("../fonts/Roboto-Regular.eot");
+   src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"),
+      url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Conv_Roboto-Thin";
-   src: url("fonts/Roboto-Thin.eot");
-   src: local("☺"), url("fonts/Roboto-Thin.woff") format("woff"), url("fonts/Roboto-Thin.ttf") format("truetype"),
-      url("fonts/Roboto-Thin.svg") format("svg");
+   src: url("../fonts/Roboto-Thin.eot");
+   src: local("☺"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.ttf") format("truetype"),
+      url("../fonts/Roboto-Thin.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
-   font-family: "Conv_Unisans";
+   font-family: "../Conv_Unisans";
    src: url("fonts/Unisans.eot");
-   src: local("☺"), url("fonts/Unisans.woff") format("woff"), url("fonts/Unisans.ttf") format("truetype"),
-      url("fonts/Unisans.svg") format("svg");
+   src: local("☺"), url("../fonts/Unisans.woff") format("woff"), url("../fonts/Unisans.ttf") format("truetype"),
+      url("../fonts/Unisans.svg") format("svg");
    font-weight: normal;
    font-style: normal;
 }
+
+@font-face {
+   font-family: "HeavyCaps";
+   src: url("fonts/UniSansHeavyCaps.eot");
+   src: local("☺"), url("../fonts/UniSansHeavyCaps.woff") format("woff"),
+      url("../fonts/UniSansHeavyCaps.ttf") format("truetype"), url("../fonts/UniSansHeavyCaps.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+
 /* ПЕРЕМЕННЫЕ============================================================================== */
 :root {
    --minWidth: 320px;
@@ -194,6 +204,9 @@ h6 {
 .header {
    background: url(../img/bg_header1.jpg) top no-repeat;
 }
+.container {
+   height: 150px;
+}
 
 .top-header__container {
    display: flex;
@@ -220,7 +233,7 @@ h6 {
 }
 
 .top-header__menu {
-   padding: 15px 0;
+   padding: 5px 0;
 }
 .menu {
    align-items: center;
@@ -231,7 +244,7 @@ h6 {
    flex-wrap: wrap;
 }
 .menu__list li {
-   flex: 0 1 40%;
+   flex: 0 1 30%;
    padding: 1px 0px;
 }
 .menu__link:hover {
@@ -248,7 +261,7 @@ h6 {
    display: inline-flex;
    justify-content: center;
    align-items: center;
-   padding: 0 22px;
+   padding: 0 5px;
    text-decoration: underline;
    transition: all 0.4s ease 0s;
 }
@@ -509,8 +522,8 @@ h6 {
       background: rgb(254, 210, 255);
       background: linear-gradient(0deg, rgba(254, 210, 255, 1) 37%, rgba(255, 242, 252, 1) 79%);
    }
-   .menu__link:hover{
-       background: none;
+   .menu__link:hover {
+      background: none;
    }
 
    .menu__body._active {
@@ -631,6 +644,18 @@ h6 {
       background: none;
       padding: 0;
    }
+   .actions-header__item_login:hover {
+      background: none;
+   }
+   .actions-header__item_reg:hover {
+      background: none;
+   }
+   .actions-header__item_mail:hover {
+      background: none;
+   }
+   .info-header__callback:hover {
+      background: none;
+   }
 }
 @media (max-width: 994px) {
    .header {
@@ -708,16 +733,100 @@ h6 {
    ._container {
       padding: 0px 8px 0px 8px;
    }
-   .actions-header__item_login:hover{
-       background: none;
+   /* .bottom-header {
+      visibility: hidden;
+   } */
+   .header {
+      height: 75px;
    }
-   .actions-header__item_reg:hover{
-    background: none;
-    }
-    .actions-header__item_mail:hover{
-        background: none;
-    }
-    .info-header__callback:hover{
-        background: none;
-    } 
 }
+
+/*Основной контент -------------------------------------------------------------------------------------- */
+.page {
+   flex: 0 1 auto;
+}
+.page__conatiner {
+   display: flex;
+}
+.page__side {
+   flex: 0 1 260px;
+}
+.page__menu {
+}
+.page__content {
+   flex: 1 1 auto;
+   padding: 0px 0px 0px 30px;
+}
+.menu-page {
+   background: #fed9eb;
+}
+.menu-page__header {
+   padding: 20px;
+   display: flex;
+   align-items: center;
+}
+.menu-page__tittle {
+   font-family: HeavyCaps;
+   font-size: 30px;
+   letter-spacing: 0.75px;
+   text-transform: uppercase;
+   line-height: 35px;
+}
+.menu-page__burger {
+   flex: 0 0 36px;
+   width: 36px;
+   height: 36px;
+   background: #e7d5de;
+   cursor: pointer;
+   z-index: 5;
+   position: relative;
+   display: block;
+   padding: 10px 6px;
+}
+.menu-page__lines {
+   position: relative;
+}
+.menu-page__lines span {
+   transition: all 0.3s ease 0s;
+   top: calc(50%-1px);
+   left: 0;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: #000;
+}
+.menu-page__lines span:first-child {
+   top: 0px;
+}
+.menu-page__lines span:nth-child(2) {
+   top: 16px;
+}
+.menu-page__lines span:last-child {
+   top: auto;
+   bottom: 0;
+}
+.menu-page__lines._active span {
+   transform: scale(0);
+}
+.menu-page__lines._active span:first-child {
+   transform: rotate(-45deg);
+   top: calc(50% - 1px);
+}
+.menu-page__lines._active span:last-child {
+   transform: rotate(45deg);
+   bottom: calc(50% - 1px);
+}
+.menu-page__body {
+}
+.menu-page__list {
+}
+.menu-page__link {
+}
+.menu-page___link_parent {
+}
+.menu-page__submenu {
+}
+.submenu-page {
+}
+
+/*Основной контент end-------------------------------------------------------------------------------------- */
