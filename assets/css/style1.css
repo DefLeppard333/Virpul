@@ -1,0 +1,14 @@
+.logo {
+   position: relative;
+}
+
+.plus::after {
+   content: "";
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   width: 14px;
+   height: 14px;
+   background: url(../img/enter.png);
+   transform: translate(0px, -50%);
+}
