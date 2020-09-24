@@ -773,6 +773,8 @@ h6 {
    padding: 20px;
    display: flex;
    align-items: center;
+   position: relative;
+   z-index: 2;
 }
 .menu-page__tittle {
    font-family: HeavyCaps;
@@ -828,6 +830,7 @@ h6 {
 
 .menu-page__body {
    display: none;
+   
 }
 .menu-page__body._active {
    display: flex;
@@ -881,19 +884,25 @@ h6 {
    left: 100%;
    height: 100%;
    overflow: auto;
+   width: 280px; 
 }
-.submenu-page {
-   background-color: #fff;
-   width: 280px;
-   border: 2px solid #f5d1e2;
-   border-left: 0;
-}
+
 .submenu-page__item {
+   width: 280px;
    position: absolute;
    width: 100%;
    height: 100%;
    top: 0;
-   left: 0;
+   left: -100%;
+   background-color: #fff;
+   border: 2px solid #f5d1e2;
+   border-left: 0;
+  
+   
+}
+.burger__plus._active {
+  left: 0;
+   
 }
 .submenu-page__menu {
 }
