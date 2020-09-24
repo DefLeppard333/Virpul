@@ -507,7 +507,7 @@ h6 {
       top: -100%;
       left: 0;
       overflow: auto;
-      padding: 100px 20px 30px 20px;
+      padding: 100px 0px 30px 0px;
       z-index: 2;
       background-color: #fff;
       transition: all 0.5s ease 0s;
@@ -545,7 +545,14 @@ h6 {
       text-decoration: none;
    }
    .menu__list li {
-      margin: 0px 0px 20px 0px;
+      height: 60px;
+      padding: 0px 20px 0px 20px;
+      border-bottom: 1px solid lightgrey;
+
+      display: flex;
+   }
+   .menu__list a {
+      align-content: center;
    }
 
    .top-header__column_logo {
@@ -760,6 +767,7 @@ h6 {
 }
 .menu-page {
    background: #fed9eb;
+   position: relative;
 }
 .menu-page__header {
    padding: 20px;
@@ -828,7 +836,13 @@ h6 {
    width: 100%;
 }
 .menu-page__list li {
-   border-bottom: 1px solid rgb(218, 198, 198);
+   border-bottom: 1px solid #d1cbcb;
+}
+.menu-page__list li:last-child {
+   border-bottom: none;
+}
+.menu-page__list li:first-child {
+   border-top: 1px solid #d1cbcb;
 }
 .menu-page__link {
    letter-spacing: 0.3px;
@@ -859,16 +873,49 @@ h6 {
    transform: rotate(90deg);
 }
 
-.menu-page___link_parent {
-}
+/* submenu ----------------------------------------------------------------*/
+
 .menu-page__submenu {
+   position: absolute;
+   top: 0;
+   left: 100%;
+   height: 100%;
+   overflow: auto;
 }
 .submenu-page {
+   background-color: #fff;
+   width: 280px;
+   border: 2px solid #f5d1e2;
+   border-left: 0;
 }
+.submenu-page__item {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+.submenu-page__menu {
+}
+.submenu-page__menu li {
+   border-bottom: 1px solid #f5f2f2;
+}
+.submenu-page__link {
+   color: black;
+   font-size: 12px;
+   font-weight: 300;
+   letter-spacing: 0.3px;
+   padding: 10px 40px;
+   display: block;
+}
+/* submenu end ----------------------------------------------------------------*/
 
 @media (min-width: 992px) {
    .menu-page__link:hover {
       background-color: #f3d4e4;
+   }
+   .submenu-page__link:hover {
+      background: #fae3ee;
    }
 }
 
