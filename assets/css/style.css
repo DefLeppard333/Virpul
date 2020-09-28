@@ -937,9 +937,11 @@ h6 {
 }
 .search-page__input {
    flex: 1 1 auto;
+   border: 2px solid #f2f2f2;
 }
 .search-page__input input {
-   height: 39px;
+   height: 100%;
+   width: 100%;
 }
 .search-page__btn {
 }
