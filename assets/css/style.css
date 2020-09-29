@@ -767,6 +767,7 @@ h6 {
    padding: 0px 0px 0px 30px;
 }
 .page__search {
+   padding: 0px 0px 22px 0px;
 }
 .menu-page {
    background: #fed9eb;
@@ -886,34 +887,35 @@ h6 {
    left: 100%;
    height: 100%;
    overflow: auto;
-   width: 100%;
+   width: 200%;
    pointer-events: none;
 }
 
 .submenu-page__item {
-   width: 100%;
    position: absolute;
    top: 0;
    left: 0;
-   background-color: #fff;
-   /* border: 2px solid #f5d1e2;
-   border-left: 0; */
-   transform: translate(-100%, 0);
+   height: 100%;
+   transform: translate(-300%, 0);
    transition: all 0.4s ease 0s;
 }
-
-.submenu-page__menu li {
-   border: 1px solid #f3d4e4;
+.submenu-page__menu {
+   display: flex;
+   flex-flow: wrap column;
+   height: 100%;
+   min-width: 100%;
    background-color: #f3d4e4;
 }
+
 .submenu-page__link {
    color: black;
    font-size: 12px;
    font-weight: 300;
    letter-spacing: 0.3px;
-   padding: 10px 40px;
+   padding: 10px 30px;
    display: block;
 }
+
 .menu-page__parent._active .submenu-page__item {
    z-index: 2;
    transform: translate(0, 0);
@@ -926,6 +928,9 @@ h6 {
 }
 ::-webkit-scrollbar {
    display: none;
+}
+.menu-page__parent._active .menu-page__link {
+   background-color: #f3d4e4;
 }
 
 /* submenu end ----------------------------------------------------------------*/
@@ -962,10 +967,41 @@ h6 {
    width: 100px;
 }
 /* Search blok end================================================================================= */
+/* Slider block ============================================================================================ */
+.page__slider {
+   padding: 0px 0px 65px 0px;
+}
+.main-slider {
+}
+.main-slider__body {
+}
+._swiper {
+}
+.main-slider__slide {
+}
+.main-slider__content {
+}
+.content-main-slider {
+}
+.content-main-slider__tittle {
+}
+.content-main-slider__text {
+}
+.content-main-slider__footer {
+}
+.content-main-slider__price {
+}
+.content-main-slider__button {
+}
+.main-slider__image {
+}
+.main-slider__dots {
+}
+/* Slider block  end============================================================================================ */
 @media (min-width: 992px) {
-   .menu-page__parent._active .menu-page__link {
+   /* .menu-page__parent._active .menu-page__link {
       background-color: #f3d4e4;
-   }
+   } */
    .submenu-page__link:hover {
       background: #fae3ee;
    }
