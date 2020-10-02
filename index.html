@@ -6,10 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="assets/css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900" rel="stylesheet" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
-   <link rel="stylesheet" href="assets/css/swiper.min.css">
-   <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+   <!-- <link rel="stylesheet" href="assets/swiper/package/css/swiper.min.css">
+   <link rel="stylesheet" href="assets/swiper/package/css/swiper.css"> -->
+
+   <!-- <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" /> -->
 
 
    <title>Virpul</title>
@@ -249,54 +253,73 @@
                   </div>
                   <button type="submit" class="search-page__btn btn">Найти</button>
                </form>
-               <div class="page__slider main-slider">
-                  <div class="main-slider__body ">
-                     <div class="main-slider__slide">
-                        <div class="main-slider__content content-main-slider">
-                           <div class="content-main-slider__tittle">
+               <div class="swiper-container">
+
+                  <div class="swiper-wrapper">
+
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__content content-mainslider">
+                           <div class="content-mainslider__tittle">
                               <span>Мега</span>распродажа
                            </div>
-                           <div class="content-main-slider__text-container">
-                              <div class="content-main-slider__text">
+                           <div class="content-mainslider__text-container">
+                              <div class="content-mainslider__text">
                                  <span>Успей купить</span>
                                  20% скидки на блузки
                               </div>
                            </div>
-                           <div class="content-main-slider__footer">
-                              <div class="content-main-slider__price">От 100грн.</div>
-                              <a href="" class="content-main-slider__button"><span>Посмотреть »</span></a>
+                           <div class="content-mainslider__footer">
+                              <div class="content-mainslider__price">От 100грн.</div>
+                              <a href="" class="content-mainslider__button"><span>Посмотреть »</span></a>
                            </div>
                         </div>
-                        <div class="main-slider__image ">
+                        <div class="mainslider__image ">
                            <img src="assets/img/banner1.jpg" alt="">
                         </div>
-
                      </div>
-                     <div class="main-slider__slide">
-                        <div class="main-slider__content content-main-slider">
-                           <div class="content-main-slider__tittle">
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__content content-mainslider">
+                           <div class="content-mainslider__tittle">
                               <span>Мега</span>распродажа
                            </div>
-                           <div class="content-main-slider__text-container">
-                              <div class="content-main-slider__text">
+                           <div class="content-mainslider__text-container">
+                              <div class="content-mainslider__text">
                                  <span>Успей купить</span>
                                  20% скидки на блузки
                               </div>
                            </div>
-                           <div class="content-main-slider__footer">
-                              <div class="content-main-slider__price">От 100грн.</div>
-                              <a href="" class="content-main-slider__button"><span>Посмотреть »</span></a>
+                           <div class="content-mainslider__footer">
+                              <div class="content-mainslider__price">От 100грн.</div>
+                              <a href="" class="content-mainslider__button"><span>Посмотреть »</span></a>
                            </div>
                         </div>
-                        <div class="main-slider__image ">
+                        <div class="mainslider__image ">
                            <img src="assets/img/banner2.jpg" alt="">
                         </div>
-
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__content content-mainslider">
+                           <div class="content-mainslider__tittle">
+                              <span>Мега</span>распродажа
+                           </div>
+                           <div class="content-mainslider__text-container">
+                              <div class="content-mainslider__text">
+                                 <span>Успей купить</span>
+                                 20% скидки на блузки
+                              </div>
+                           </div>
+                           <div class="content-mainslider__footer">
+                              <div class="content-mainslider__price">От 100грн.</div>
+                              <a href="" class="content-mainslider__button"><span>Посмотреть »</span></a>
+                           </div>
+                        </div>
+                        <div class="mainslider__image ">
+                           <img src="assets/img/banner3.jpg" alt="">
+                        </div>
                      </div>
                   </div>
-                  <div class="main-slider__dots">
 
-                  </div>
+                  <div class="swiper-pagination"></div>
                </div>
             </div>
          </div>
@@ -306,11 +329,15 @@
    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
    <script src="/assets/js/script.js"></script>
    <script src="/assets/js/burger.js"></script>
    <script src="/assets/js/submenu.js"></script>
-   <script src="assets/js/slider.js"></script>
-   <script src="/assets/js/swiper.min.js"></script>
+   <script src="/assets/js/slider.js"></script>
+
 
 
 </body>
