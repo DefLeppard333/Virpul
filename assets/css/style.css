@@ -763,12 +763,13 @@ h6 {
    position: relative;
 }
 .page__content {
-   flex: 0 1 auto;
-   width: 100%;
-   padding: 0px 0px 0px 30px;
+   flex: 1 1 auto;
+   width: 80%;
+   padding: 0px 30px 0px 30px;
 }
 .page__search {
    padding: 0px 0px 22px 0px;
+   /* width: 100%; */
 }
 .menu-page {
    background: #fed9eb;
@@ -942,7 +943,7 @@ h6 {
    display: flex;
 }
 .search-page__input {
-   flex: 0 1 auto;
+   flex: 1 1 auto;
    border: 2px solid #f2f2f2;
 }
 .search-page__input input {
@@ -969,17 +970,17 @@ h6 {
 }
 /* Search blok end================================================================================= */
 /* Slider block ============================================================================================ */
-/* .page__slider {
-   padding: 0px 0px 65px 0px;
+.page__slider {
+   padding: 0px 20px 65px 0px;
 }
 .mainslider {
-   width: 100%;
+   width: 50%;
    position: relative;
 }
 .mainslider__body {
-   /* display: flex; */
-/* max-width: 900px;
-   width: 100%; 
+   display: flex;
+   /* max-width: 900px; */
+   /* width: 50%; */
 }
 
 .mainslider__slide {
@@ -987,12 +988,14 @@ h6 {
 }
 .mainslider__content {
    position: relative;
-   z-index: 1;
+   z-index: 2;
 }
 .content-mainslider {
    padding: 20px 35px;
 }
 .content-mainslider__tittle {
+   position: relative;
+   z-index: 2;
    font-family: Conv_Roboto-Black;
    font-weight: 900;
    color: #333333;
@@ -1012,6 +1015,8 @@ h6 {
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+   z-index: 2;
 }
 .content-mainslider__text {
    font-family: Conv_Roboto-Black;
@@ -1039,23 +1044,20 @@ h6 {
 }
 .content-mainslider__button {
 }
-.mainslider__image img {
+.mainslider__image {
    position: absolute;
-   width: 100%;
-   height: 100%;
    top: 0;
    left: 0;
    object-fit: cover;
-   object-position: top;
 }
 
 .mainslider__dotts {
    position: absolute;
    left: 50%;
-} */
-.swiper-container {
-   width: 100%;
 }
+/* .swiper-container {
+   width: 100%;
+} */
 .swiper-wrapper {
 }
 .swiper-slide {
