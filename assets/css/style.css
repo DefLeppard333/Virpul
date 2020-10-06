@@ -992,10 +992,10 @@ h6 {
 }
 .content-mainslider {
    padding: 20px 35px;
-}
-.content-mainslider__tittle {
    position: relative;
    z-index: 2;
+}
+.content-mainslider__tittle {
    font-family: Conv_Roboto-Black;
    font-weight: 900;
    color: #333333;
@@ -1048,7 +1048,14 @@ h6 {
    position: absolute;
    top: 0;
    left: 0;
-   object-fit: cover;
+   object-fit: contain;
+   width: 100%;
+
+   height: auto;
+}
+.image-slider {
+   display: flex;
+   flex: auto;
 }
 
 .mainslider__dotts {
