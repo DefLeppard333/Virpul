@@ -26,65 +26,84 @@
 //    sliders_bild_callback();
 // }
 
-// function sliders_bild_callback(params) { }
-let mainslider = new Swiper('.swiper-container', {
-   // effect: 'fade',
-   // autoplay:{
-   //    delay: 3000,
-   //    disableOnInteraction: false,
-   // },
-   ebserver: true,
 
-   // flipEffect: {
-   //    slideShadows: false,
-   // },
-   ebserverParents: true,
-   slidesPerView: 1,
-   spaceBetween: 0,
-   // autoHeight: true,
-   speed: 800,
-   // touchRatio: 0,
-   // simulateTouch: false,
-   loop: true,
-   // preLoadImages: false;
-   // lazy: true,
-   // //Dotts
-   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-   },
-   //Arrows
-   // navigation: {
-   //    nextEl: '.swiper-button-next',
-   //    prevEl: '.swiper-button-prev',
-   // },
-   // breackpoints: {
-   //    320: {
-   //       slidesPerView: 1,
-   //       spaceBetween: 0,
-   //       autoHeight: true,
-   //    },
-   //    768: {
-   //       slidesPerView: 2,
-   //       spaceBetween: 20,
-   //    },
-   //    992: {
-   //       slidesPerView: 3,
-   //       spaceBetween: 20,
-   //    },
-   //    1268:{
-   //       slidesPerView: 4,
-   //       spaceBetween: 30,
-   //    },
-   // },
-   // on: {
-   //    lazyImageReady: function () {
-   //       ibg();
-   //    },
-   // }
-   //Srollbar
-   // scrollbar:{
-   //    el:'.swiper-scrollbar',
-   // },
-});
+
+// function sliders_bild_callback(params) { }
+
+
+
+if (document.querySelector('.swiper-container')) {
+   let mainslider = new Swiper('.swiper-container', {
+      // effect: 'fade',
+      // autoplay:{
+      //    delay: 3000,
+      //    disableOnInteraction: false,
+      // },
+      ebserver: true,
+
+      // flipEffect: {
+      //    slideShadows: false,
+      // },
+      ebserverParents: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // autoHeight: true,
+      speed: 800,
+      // touchRatio: 0,
+      // simulateTouch: false,
+      // loop: true,
+      // preLoadImages: false;
+      // lazy: true,
+      // //Dotts
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      },
+      //Arrows
+      // navigation: {
+      //    nextEl: '.swiper-button-next',
+      //    prevEl: '.swiper-button-prev',
+      // },
+      // breackpoints: {
+      //    320: {
+      //       slidesPerView: 1,
+      //       spaceBetween: 0,
+      //       autoHeight: true,
+      //    },
+      //    768: {
+      //       slidesPerView: 2,
+      //       spaceBetween: 20,
+      //    },
+      //    992: {
+      //       slidesPerView: 3,
+      //       spaceBetween: 20,
+      //    },
+      //    1268:{
+      //       slidesPerView: 4,
+      //       spaceBetween: 30,
+      //    },
+      // },
+      // on: {
+      //    lazyImageReady: function () {
+      //       ibg();
+      //    },
+      // }
+      //Srollbar
+      // scrollbar:{
+      //    el:'.swiper-scrollbar',
+      // },
+   });
+
+
+   let mainSliderImages = document.querySelectorAll('.mainslider__image');
+   let swiperPagination = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+   for (let index = 0; index < mainSliderImages.length; index++) {
+      const mainSliderImage = mainSliderImages[index].querySelector('img').getAttribute('src');
+      swiperPagination[index].style.backgroundImage = "url('" + mainSliderImage + "')";
+   }
+
+
+}
+
+
 
