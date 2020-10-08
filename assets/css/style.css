@@ -189,17 +189,8 @@ h6 {
    max-width: 1180px;
    margin: 0 auto;
    padding: 0 20px;
-   /* @media (max-width: var(--md1)+px) {
-      max-width: 970px;
-   }
-   @media (max-width: var(--md2)+px) {
-      max-width: 750px;
-   }
-   @media (max-width: var(--md3)+px) {
-      max-width: none;
-      padding: 0 10px;
-   } */
 }
+
 /* ШАПКА НАЧАЛО--------------------------------------------------------------------------------- */
 .header {
    background: url(../img/bg_header1.jpg) top no-repeat;
@@ -490,7 +481,7 @@ h6 {
    }
 }
 
-/* burger ------------------------------------------------------------------------------------*/
+/* burger header------------------------------------------------------------------------------------*/
 @media (max-width: 994px) {
    .header {
       background: none;
@@ -618,7 +609,7 @@ h6 {
    }
 }
 
-/* burger end  ----------------------------------------------------------------------------------------*/
+/* burger header end  ----------------------------------------------------------------------------------------*/
 
 @media (max-width: 940px) {
    .actions-header__item:hover {
@@ -717,6 +708,10 @@ h6 {
 }
 
 @media (max-width: 540px) {
+   .container {
+      height: 75px;
+   }
+
    .bottom-header__actions {
       justify-content: space-between;
    }
@@ -728,7 +723,7 @@ h6 {
    }
    .info-header__cart {
       position: relative;
-      z-index: 3;
+      z-index: 4;
       width: 40px;
       height: 40px;
    }
@@ -753,11 +748,18 @@ h6 {
    flex: 0 1 auto;
    padding: 20px 0px 0px 0px;
 }
+
 @media (min-width: 992px) {
    .page__conatiner {
       display: flex;
    }
 }
+@media (max-width: 992px) {
+   .page__side {
+      margin: 0px 0px 20px 0px;
+   }
+}
+
 .page__side {
    flex: 0 1 260px;
 }
@@ -787,7 +789,6 @@ h6 {
    align-items: center;
    position: relative;
    z-index: 2;
-   margin: 0px 0px 22px 0px;
 }
 .menu-page__tittle {
    flex: 1 1 auto;
@@ -891,25 +892,10 @@ h6 {
 }
 
 /* submenu ----------------------------------------------------------------*/
-
-.menu-page__submenu {
-   position: absolute;
-   top: 0;
-   left: 100%;
-   height: 100%;
-   overflow: auto;
-   width: 200%;
-   pointer-events: none;
-}
-
 .submenu-page__item {
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 100%;
-   transform: translate(-300%, 0);
-   transition: all 0.4s ease 0s;
+   display: none;
 }
+
 .submenu-page__menu {
    display: flex;
    flex-flow: wrap column;
@@ -920,28 +906,52 @@ h6 {
 
 .submenu-page__link {
    color: black;
-   font-size: 12px;
+   font-size: 18px;
    font-weight: 300;
    letter-spacing: 0.3px;
    padding: 10px 30px;
    display: block;
 }
-
 .menu-page__parent._active .submenu-page__item {
-   z-index: 2;
-   transform: translate(0, 0);
+   display: flex;
 }
-.menu-page__parent._active .menu-page__submenu {
-   pointer-events: all;
-}
-.menu-page__parent._active .menu-page__link::before {
-   display: none;
-}
-::-webkit-scrollbar {
-   display: none;
-}
-.menu-page__parent._active .menu-page__link {
-   background-color: #f3d4e4;
+@media (min-width: 992px) {
+   .submenu-page__link {
+      font-size: 12px;
+   }
+   .menu-page__submenu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      overflow: auto;
+      width: 200%;
+      pointer-events: none;
+   }
+   .submenu-page__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transform: translate(-300%, 0);
+      transition: all 0.4s ease 0s;
+   }
+   .menu-page__parent._active .submenu-page__item {
+      z-index: 2;
+      transform: translate(0, 0);
+   }
+   .menu-page__parent._active .menu-page__submenu {
+      pointer-events: all;
+   }
+   .menu-page__parent._active .menu-page__link::before {
+      display: none;
+   }
+   ::-webkit-scrollbar {
+      display: none;
+   }
+   .menu-page__parent._active .menu-page__link {
+      background-color: #f3d4e4;
+   }
 }
 
 /* submenu end ----------------------------------------------------------------*/
