@@ -1,6 +1,6 @@
 let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
 if (isMobile) {
-   let menuParents = document.querySelectorAll('.menu-page__parent a');
+   let menuParents = document.querySelectorAll('.menu-page__parent>a');
    for (let index = 0; index < menuParents.length; index++) {
       const menuParent = menuParents[index];
       menuParent.addEventListener("click", function (e) {
@@ -9,6 +9,7 @@ if (isMobile) {
 
       });
    }
+
 
 } else {
    let menuParents = document.querySelectorAll('.menu-page__parent');
