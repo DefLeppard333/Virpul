@@ -1125,15 +1125,20 @@ footer {
 }
 
 /* Page-side__news============================================================================================= */
-.page__side-news {
+.page__content-side {
+   margin: 30px 0px 0px 0px;
 }
-.news-side {
+.page__news-side {
+   margin: 0px 0px 75px 0px;
 }
-.news-side__tittle {
+.page__news-side:last-child {
+   margin: 0px 0px 0px 0px;
+}
+.news-side__title {
    display: inline-block;
    margin: 0px 0px 35px 0px;
 }
-.side-tittle {
+.side-title {
    color: #dadada;
    font-family: "Conv_Unisans";
    font-size: 30px;
@@ -1150,7 +1155,7 @@ footer {
    display: inline-block;
 }
 @media (min-width: 992px) {
-   .side-tittle:hover {
+   .side-title:hover {
       color: #ff99ff;
    }
    .news-side__label:hover {
@@ -1179,7 +1184,78 @@ footer {
    font-size: 24px;
    display: block;
 }
-.news-side__text {
-}
+
 /* Page-side__news end========================================================================================= */
+/* Page-side__reviews  ========================================================================================= */
+.page__reviews-side {
+   margin: 0px 0px 75px 0px;
+}
+.page__reviews-side:last-child {
+   margin: 0px 0px 0px 0px;
+}
+
+.reviews-side__title {
+   display: inline-block;
+   margin: 0px 0px 20px 0px;
+}
+
+.reviews-side__item {
+   display: block;
+   margin: 0px 0px 45px 0px;
+}
+.reviews-side__item:last-child {
+   margin: 0px 0px 0px 0px;
+}
+.reviews-side__header {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 0px 10px 0px;
+}
+.reviews-side__user {
+   color: #333333;
+   font-size: 12px;
+   font-weight: 900;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.reviews-side__data {
+   color: #999999;
+   font-size: 12px;
+   font-weight: 300;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.reviews-side__body {
+   padding: 14px 8px 14px 30px;
+   position: relative;
+   font-size: 12px;
+   font-weight: 300;
+   line-height: 18px;
+}
+.reviews-side__body::before {
+   content: '"';
+   position: absolute;
+   left: 8px;
+   top: 12px;
+   line-height: 1;
+   color: #dadada;
+   font-size: 48px;
+   font-weight: 700;
+}
+@media (min-width: 992px) {
+   .reviews-side__item:hover .reviews-side__body {
+      background-color: #ff99ff;
+   }
+   .reviews-side__item:hover .reviews-side__body::before {
+      color: #f862f8;
+   }
+   .reviews-side__item:hover .reviews-side__data {
+      color: #ff99ff;
+   }
+   .reviews-side__item:hover .reviews-side__user {
+      color: #ff99ff;
+   }
+}
+/* Page-side__reviews end========================================================================================= */
+
 /*Основной контент end-------------------------------------------------------------------------------------- */
